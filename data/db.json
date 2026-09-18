@@ -1,4 +1,30 @@
 {
+  "certificates": [
+    {
+      "id": "cert_witsim_01",
+      "instrumentName": "Witschi CH-318 校表仪",
+      "certificateNo": "JL-2026-0188",
+      "accuracyGrade": 0.2,
+      "validFrom": "2026-01-01T00:00:00.000Z",
+      "validUntil": "2027-01-01T00:00:00.000Z",
+      "status": "active",
+      "note": "在有效期内，精度等级满足常规机械表复测",
+      "createdAt": "2026-01-02T00:00:00.000Z",
+      "disabledAt": null
+    },
+    {
+      "id": "cert_witsim_expired",
+      "instrumentName": "老式机械校表仪",
+      "certificateNo": "JL-2024-0066",
+      "accuracyGrade": 0.5,
+      "validFrom": "2024-01-01T00:00:00.000Z",
+      "validUntil": "2024-12-31T00:00:00.000Z",
+      "status": "active",
+      "note": "证书已过期，仅用于门禁校验测试",
+      "createdAt": "2024-01-05T00:00:00.000Z",
+      "disabledAt": null
+    }
+  ],
   "clocks": [
     {
       "id": "clock_demo",
@@ -6,6 +32,7 @@
       "escapementType": "瑞士杠杆式",
       "balanceFrequency": "18000vph",
       "targetDailyRateSeconds": 20,
+      "requiredAccuracyGrade": 0.5,
       "note": "怀表机芯，走时偏快",
       "createdAt": "2026-06-16T00:00:00.000Z"
     }
@@ -26,6 +53,7 @@
       "id": "retest_demo",
       "clockId": "clock_demo",
       "adjustmentId": "adjustment_demo",
+      "certificateId": "cert_witsim_01",
       "testedAt": "2026-06-16T00:00:00.000Z",
       "dailyRateSeconds": 31,
       "amplitude": 248,
