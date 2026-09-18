@@ -32,5 +32,18 @@
       "qualified": false,
       "note": "仍偏快，振幅尚可"
     }
+  ],
+  "certificates": [
+    {
+      "id": "cert_demo",
+      "instrumentCode": "CAL-9000-01",
+      "instrumentName": "机械表校表仪",
+      "accuracyGrade": 0.2,
+      "validFrom": "2026-01-01",
+      "validUntil": "2026-12-31",
+      "status": "active",
+      "note": "示例校准仪证书",
+      "createdAt": "2026-06-16T00:00:00.000Z"
+    }
   ]
 }
